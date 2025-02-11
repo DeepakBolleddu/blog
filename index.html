@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabbed Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Portfolio</h1>
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab(event, 'home')">Home</button>
+      <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
+      <button class="tab-button" onclick="openTab(event, 'publications')">Publications</button>
+      <button class="tab-button" onclick="openTab(event, 'coursework')">Coursework</button>
+    </div>
 
+    <div id="home" class="tab-content active">
+      <h2>Welcome to My Portfolio</h2>
+      <p>This is the home section. Here you can find an overview of my work and achievements.</p>
+    </div>
+
+    <div id="projects" class="tab-content">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project A:</strong> A web app for task management.</li>
+        <li><strong>Project B:</strong> A machine learning model for sentiment analysis.</li>
+        <li><strong>Project C:</strong> A mobile app for fitness tracking.</li>
+      </ul>
+    </div>
+
+    <div id="publications" class="tab-content">
+      <h2>Publications</h2>
+      <ul>
+        <li><strong>"Research Paper 1"</strong> - Published in XYZ Journal, 2023.</li>
+        <li><strong>"Research Paper 2"</strong> - Presented at ABC Conference, 2024.</li>
+        <li><strong>"Blog Series"</strong> - Articles on web development and AI.</li>
+      </ul>
+    </div>
+
+    <div id="coursework" class="tab-content">
+      <h2>Coursework</h2>
+      <ul>
+        <li><strong>CS101:</strong> Introduction to Computer Science.</li>
+        <li><strong>ML201:</strong> Machine Learning Fundamentals.</li>
+        <li><strong>WD301:</strong> Advanced Web Development.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
