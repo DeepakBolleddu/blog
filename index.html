@@ -3,190 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  david8deepu [at] gmail[.] com 
   <title>Home | Deepak Bolleddu</title>
   <link rel="stylesheet" href="style.css" />
   <!-- Google Font for Thought Section -->
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <style>
-    /* Reset default spacing and prevent horizontal scrolling */
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      height: 100%;
-    }
-
-    /* Set up a flex container to push the footer to the bottom */
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      /* Use a plain white background for pages other than home */
-      background: white;
-      position: relative;
-    }
-
-    main {
-      flex: 1;
-      padding-top: 60px; /* Padding to avoid content hiding behind fixed nav */
-    }
-
-    /* General Tabs styling */
-    .tabs__tab {
-      display: none;
-      width: 100%;
-      padding: 20px;
-      box-sizing: border-box;
-      overflow-y: auto;
-    }
-    .tabs__tab.active {
-      display: block;
-    }
-
-    /* Navigation styling */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      background: transparent; /* No extra box styling */
-    }
-    nav ul li {
-      margin: 0 8px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      font-size: 18px;
-      color: #333;
-      padding: 8px 12px;
-      transition: border-bottom 0.3s;
-      white-space: nowrap;
-    }
-    nav ul li a.active {
-      border-bottom: 2px solid #333;
-    }
-
-    /* Home section styling – keep image and text side by side */
-    #home-section {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
-      flex-wrap: nowrap;
-      justify-content: center;
-    }
-    #home-section img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid white;
-    }
-    #home-section .welcome-text {
-      max-width: 600px;
-    }
-    #home-section h1 {
-      margin-top: 0;
-    }
-
-    /* Home Section Background Image (applied only on the home tab) */
-    #tab_1 {
-      position: relative;
-      z-index: 0;
-      overflow: hidden;
-    }
-    #tab_1::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('https://raw.githubusercontent.com/bolleddu15/pbblog/main/Screenshot%20(42).png') no-repeat center center;
-      background-size: cover;
-      opacity: 1; /* Fully visible background image */
-      /* Make the image less visible (about 25% visible, 75% transparent) */
-      opacity: 0.25;
-      z-index: -1;
-    }
-
-    /* List styling for Projects, Publications, and Stories */
-    #projects-list,
-    #publications-list,
-    #stories-list {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-    }
-    #projects-list li,
-    #publications-list li,
-    #stories-list li {
-      margin-bottom: 15px;
-    }
-    .project-link,
-    .publication-link,
-    .story-link {
-      font-size: 24px;
-      color: inherit;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    #project-content p,
-    #publication-content p {
-      font-family: 'Georgia', serif;
-      font-size: 18px;
-    }
-
-    /* Thought Section styling */
-    .thought-section {
-      text-align: center;
-      margin: 40px 0;
-      padding: 20px;
-    }
-    .thought-section p {
-      font-family: 'Lobster', cursive;
-      font-size: 2.5em;
-      font-weight: bold;
-      color: #333;
-      text-transform: uppercase;
-      margin: 0;
-    }
-
-    /* Footer styling – no extra space between body and footer */
-    .footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      padding: 10px 0;
-      background: none;
-      margin: 0;
-    }
-    .footer a {
-      margin: 0;
-    }
-    .footer img {
-      width: 30px;
-      height: auto;
-    }
-
-    /* Smooth fade in for the introductory text */
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-  </style>
 </head>
 <body>
   <nav>
@@ -205,46 +25,48 @@
         🚧 Website is updating everyday 🚧
       </div>
       <div id="home-section">
+        <img src="https://via.placeholder.com/180" alt="Profile Photo">
         <div class="welcome-text">
           <h1>Welcome</h1>
           <p>
             Welcome to My Portfolio <br />
-            " I'm Deepak Bolleddu! A Master’s graduate in Computer science from University of Wollongong. I’m passionate about exploring the intersection of Big Data and AI to solve real-world problems.
-            This space is where I share my thoughts, insights, and stories I've learned along the way."
+            "I'm Deepak Bolleddu! A Master’s graduate in Computer Science from University of Wollongong. I’m passionate about exploring the intersection of Big Data and AI to solve real‑world problems.
+            This space is where I share my thoughts, insights, and the stories I've learned along the way."
           </p>
           <p style="font-style: italic; opacity: 0; animation: fadeIn 2s forwards 1s;">
-            With a Master's degree in Data Science and AI! From building models to solving real-world problems, I've honed my skills in AI, machine learning, and big data analytics—not just to analyze data.
+            With a Master's degree in Data Science &amp; AI, I’ve honed skills in machine learning and big data analytics—building models and solving real‑world challenges.
           </p>
         </div>
       </div>
-      <!-- Thought Section (Visible only on Home) -->
+      <!-- Thought Section -->
       <section class="thought-section">
-        <p>YOU BECOME WHAT YOU BELIEVE TODAY! ITS A DECISION THAT YOU DECIDE</p>
+        <p>YOU BECOME WHAT YOU BELIEVE TODAY! IT'S A DECISION THAT YOU MAKE</p>
       </section>
     </section>
 
     <!-- Projects Section -->
     <section class="tabs__tab" id="tab_2">
       <h1>Projects</h1>
+      <img src="https://via.placeholder.com/600x300" alt="Projects Dummy Photo">
       <ul id="projects-list">
         <li>
-          <a href="#/projects/name1" class="project-link" data-project="project1">
-            name2.
+          <a href="#/projects/project1" class="project-link" data-project="project1">
+            Project One
           </a>
         </li>
         <li>
-          <a href="#/projects/name2" class="project-link" data-project="project2">
-            name2.
+          <a href="#/projects/project2" class="project-link" data-project="project2">
+            Project Two
           </a>
         </li>
         <li>
-          <a href="#/projects/name2" class="project-link" data-project="project3">
-            name2.
+          <a href="#/projects/project3" class="project-link" data-project="project3">
+            Project Three
           </a>
         </li>
         <li>
-          <a href="#/projects/name2" class="project-link" data-project="project4">
-           name2
+          <a href="#/projects/project4" class="project-link" data-project="project4">
+            Project Four
           </a>
         </li>
       </ul>
@@ -252,34 +74,33 @@
 
     <!-- Project Details Section -->
     <section class="tabs__tab" id="tab_project">
-      <div id="project-content">
-        <!-- Project details will be loaded here dynamically -->
-      </div>
+      <div id="project-content"></div>
     </section>
 
     <!-- Publications Section -->
     <section class="tabs__tab" id="tab_3">
       <h1>Publications</h1>
+      <img src="https://via.placeholder.com/600x300" alt="Publications Dummy Photo">
       <ul id="publications-list">
         <li>
-          <a href="#/publications/An%20Analysis%20of%20Clustering%20Techniques" class="publication-link" data-publication="pub1">
-           publication1.
+          <a href="#/publications/pub1" class="publication-link" data-publication="pub1">
+            Publication One
           </a>
         </li>
         <li>
-          <a href="#/publications/Hadoop:%20An%20Overview%20of%20Data%20Security" class="publication-link" data-publication="pub2">
-            publication2.
+          <a href="#/publications/pub2" class="publication-link" data-publication="pub2">
+            Publication Two
           </a>
         </li>
         <li>
-          <a href="#/publications/Neuro-Symbolic%20Large%20Action%20Models:%20A%20Unified%20Theoretical%20Framework%20for%20Generalizable%20AI%20Across%20Vision,%20Language,%20and%20Robotics" class="publication-link" data-publication="pub3">
-            publication 3
+          <a href="#/publications/pub3" class="publication-link" data-publication="pub3">
+            Publication Three
           </a>
         </li>
         <li>
-          <a href="#/publications/Self-Sustaining%20Artificial%20Generative%20Systems:%20Exploring%20Autonomous%20Meta-Learning%20and%20Cross-Domain%20Knowledge%20Fusion" class="publication-link" data-publication="pub4">
-           publication 4
-         </a>
+          <a href="#/publications/pub4" class="publication-link" data-publication="pub4">
+            Publication Four
+          </a>
         </li>
       </ul>
     </section>
@@ -292,6 +113,7 @@
     <!-- Data Science Stories Section -->
     <section class="tabs__tab" id="tab_4">
       <h1>Data Science Stories</h1>
+      <img src="https://via.placeholder.com/600x300" alt="Stories Dummy Photo">
       <ul id="stories-list">
         <li>
           <a href="#/stories/story1" class="story-link" data-story="story1">
@@ -305,36 +127,31 @@
         </li>
         <li>
           <a href="#/stories/story3" class="story-link" data-story="story3">
-            How OpenAI is Paving the Way for a New Age of Intelligence?
+            How OpenAI is Paving the Way for New Intelligence
           </a>
         </li>
       </ul>
     </section>
 
-    <!-- Data Science Story Details Section -->
+    <!-- Story Details Section -->
     <section class="tabs__tab" id="tab_story">
-      <div id="story-content">
-        <!-- Story details will be loaded here dynamically -->
-      </div>
+      <div id="story-content"></div>
     </section>
   </main>
 
   <!-- Footer -->
   <div class="footer">
-    <a href="https://www.linkedin.com/in/pradeep-pb-bolleddu-4745991b2/" target="_blank" aria-label="LinkedIn">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+    <a href="https://github.com/DeepakBolleddu" target="_blank" aria-label="GitHub">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
     </a>
-    <a href="https://drive.google.com/drive/u/0/folders/1ewEaWEa7U8c3zIGViDykpwPl-1hnQ1Jz" target="_blank" aria-label="Resume">
-      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Resume" />
+    <a href="https://www.linkedin.com/in/deepak-bolleddu-3a7aa2193/" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
     </a>
-    <a href="https://github.com/bolleddu15" target="_blank" aria-label="GitHub">
-      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
-    </a>
-    <a href="mailto:bolleddu.pradeep01@gmail.com" aria-label="Email">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
+    <a href="mailto:deepakbolleddu08@gmail.com" aria-label="Email">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
     </a>
   </div>
 
-  <script src="script.js"></script>
+  <script src="event.js"></script>
 </body>
 </html>
